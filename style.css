@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   padding: 2%;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* ====== HEADER ================ */
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+header ul{
+    display: flex;
+    gap: 4%;
+    padding: 2%;
+    list-style-type: none;
+}
+
+.li a{
+    font-size: 24px;
+    color:bisque;
+}
+.ulhead{
+   display: flex;
+   flex-wrap: wrap;
+}
+/* ========= MAIN =============== */
+.main{
+   max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========== List Lesson ============== */
+ .liLesson a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(16, 66, 66);
+    line-height: 2;
+    
+ }
+ .list{
+    margin-top: 3%;
+ }
+
+ /* ===== FOOTER ========= */
+ footer{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: cornflowerblue;
+ }
+
+
+ /*  */
+
+ .flex{
+   display: flex;
+   gap: 2%;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.image{
+   width: 200px;
+   margin: 5px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.image img{
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+}
+
+.zoomable {
+   transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.zoomable.zoomed {
+   transform: scale(4.5); /* увеличивает в 2 раза */
+    z-index: 999;
+    position: relative;
+}
